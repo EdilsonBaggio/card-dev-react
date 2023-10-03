@@ -1,4 +1,4 @@
-# Card perfil Github com React.
+# Card Github com React.
 
 Consumindo dados do Perfil do Github com React. 
 Este card foi um estudo da biblioteca para consumir os dados do perfil pelo github.
