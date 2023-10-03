@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap');
 body{
-   background-color:#ddd;
+   background-color:#000;
 }
 .menu{
-  padding: 20px;
+  padding: 0;
+  height: 30px;
 }
 .menu li{
   float:left;
@@ -39,10 +40,10 @@ body{
   margin: 0;
 }
 .d-flex {
-    display: flex;
-    align-content: flex-end;
-    align-items: flex-start;
-    justify-content: space-between;
+  display: flex;
+  align-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
 }
 .btn-contato{
   margin-top: 15px;
@@ -66,9 +67,13 @@ body{
 }
 .user-avatar{
   margin-right: 15px;
+  border-radius: 10px;
 }
 .list_skins{
   list-style: none;
+}
+.follow{
+  display: grid;
 }
 @media screen and (max-width:500px){
   .d-flex {
