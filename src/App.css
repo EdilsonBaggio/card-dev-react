@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap');
+@import url('/node_modules/bootstrap/dist/css/bootstrap-grid.css');
 body{
    background-color:#000;
 }
@@ -26,6 +27,7 @@ body{
   margin: 20px;
   border-radius: 10px;
   font-family: 'Montserrat', sans-serif;
+  margin: 20px 0px;
 }
 .perfil {
     display: flex;
@@ -86,4 +88,7 @@ body{
   .list_skins{
     margin-top:40px;
   }
+}
+.content-card{
+  background-color: #ffffff;
 }

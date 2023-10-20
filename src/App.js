@@ -1,99 +1,18 @@
 // import logo from './logo.svg';
 import './App.css';
-import React, { useState, useEffect } from 'react';
-
-function Menu() {
-	return (
-  	<ul className="menu">
-  	    <Link href="/"><img src="./git-original.svg" width="30" height="30" alt=""/></Link>
-        <Link href="/"><img src="./react-original.svg" width="30" height="30" alt=""/></Link>
-        <Link href="/"><img src="./javascript-original.svg" width="30" height="30" alt=""/></Link>
-        <Link href="/"><img src="./php-original.svg" width="30" height="30" alt=""/></Link>
-        <Link href="/"><img src="./html5-original.svg" width="30" height="30" alt=""/></Link>
-        <Link href="/"><img src="./sass-original.svg" width="30" height="30" alt=""/></Link>
-  	</ul>
-  );
-}
-
-function Link({ href, children }){
-	return (
-  		<li>
-  		  <a href={href}>{children}</a>
-  		</li>
-  )
-}
-
-function Button() {
-		return (
-    		<a href="https://wa.me/5511991680375">
-    		  <button className="btn-contato">Entrar em contato</button>
-    		</a>
-    );
-}
-
-function Usergit() {
-  const [userData, setUserData] = useState(null);
-  const username = 'edilsonbaggio'; // Substitua pelo nome de usuário do GitHub desejado
-  const user = {
-    avatar_size: '95',
-  };
-  
-  useEffect(() => {
-    fetch(`https://api.github.com/users/${username}`)
-      .then(response => response.json())
-      .then(data => {
-        setUserData(data);
-      })
-      .catch(error => {
-        console.error('Erro ao buscar os dados do usuário:', error);
-      });
-  }, []);
-
-  return (
-    <div>
-      {userData ? (
-        <div className="d-flex">
-          <div className="perfil">
-            <img
-              className="user-avatar"
-              src={userData.avatar_url}
-              alt={`Imagem de perfil de ${userData.name}`}
-              width={userData.avatar_size}
-              height={user.avatar_size}
-            />
-            <div>
-              <h1>{userData.name}</h1>
-              <p>{userData.bio}</p>
-              <p>{userData.location}</p>
-              <a href={userData.blog}>edilsonsantos.website</a>
-              {console.log({userData})}
-            </div>
-          </div>
-          <div>
-            <Menu />
-            <div className="follow">
-              <span>Seguidores</span>
-              <progress value={userData.followers} max={100} />
-              <span>Seguindo</span>
-              <progress value={userData.following} max={100} />
-            </div>
-          </div>
-        </div>
-      ) : (
-        <p>Carregando...</p>
-      )}
-    </div>
-  );
-}
+import { Posts, WhatsApp, Usergit } from './components/Scripts';
 
 function App() {
   return (
-    <div>
+    <div className='container p-0'>
         <div className="base-perfil">
             <div>
                 <Usergit />
             </div>
-            <Button />
+            <WhatsApp />
+        </div>
+        <div className='row'>
+          <Posts />
         </div>
     </div>
   );
