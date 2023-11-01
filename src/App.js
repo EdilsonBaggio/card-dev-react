@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import { Posts, WhatsApp, Usergit } from './components/Scripts';
+import { Repos, WhatsApp, Usergit } from './components/Scripts';
 
 function App() {
   return (
@@ -11,9 +11,7 @@ function App() {
             </div>
             <WhatsApp />
         </div>
-        <div className='row'>
-          <Posts />
-        </div>
+          <Repos />
     </div>
   );
 }

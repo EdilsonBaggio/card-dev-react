@@ -37,9 +37,12 @@ body{
 }
 .perfil h1{
   margin: 0;
+  font-size: 18px;
 }
-.perfil p{
+.perfil p {
   margin: 0;
+  font-size: 14px;
+  line-height: 24px;
 }
 .d-flex {
   display: flex;
@@ -77,6 +80,29 @@ body{
 .follow{
   display: grid;
 }
+.content-card{
+  background-color: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.content-card p{
+  line-height: 25px;
+}
+.btn-link-repos {
+  width: 94%;
+  padding: 10px;
+  background-color: #4861cf;
+  border: 2px solid #4861cf;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  transition: 1s;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
 @media screen and (max-width:500px){
   .d-flex {
       display: flex;
@@ -88,7 +114,4 @@ body{
   .list_skins{
     margin-top:40px;
   }
-}
-.content-card{
-  background-color: #ffffff;
 }

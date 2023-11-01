@@ -1,13 +1,42 @@
 import React, { useState, useEffect } from 'react';
 
 // Exporte a função como padrão, não como uma constante
-export function Posts() {
+export function Repos() {
+    const [userData, setUserData] = useState(null);
+    const username = 'edilsonbaggio'; // Substitua pelo nome de usuário do GitHub desejado
+
+    useEffect(() => {
+        fetch(`https://api.github.com/users/${username}/repos`)
+            .then(response => response.json())
+            .then(data => {
+                setUserData(data);
+            })
+            .catch(error => {
+                console.error('Erro ao buscar os dados do usuário:', error);
+            });
+    }, []);
+
     return (
-        <div className='content-card col-md-4'>
-            teste
+        <div>
+            {userData ? (
+                <div className='row'>
+                    {userData.map(repo => (
+                        <div key={repo.id} className='col-md-4'>
+                            <div className='content-card p-3'>
+                                <h3>{repo.name}</h3>
+                                <p>{repo.description}</p>
+                                <a className='btn btn-link-repos' href={repo.html_url} target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+                            </div>
+                        </div>
+                    ))}
+                </div>   
+            ) : (
+                <p>Carregando...</p>
+            )}
         </div>
     );
 }
+
 
 export function WhatsApp() {
     return (
@@ -73,7 +102,6 @@ export function Usergit() {
                 <p>{userData.bio}</p>
                 <p>{userData.location}</p>
                 <a href={userData.blog}>edilsonsantos.website</a>
-                {console.log({userData})}
                 </div>
             </div>
             <div>
