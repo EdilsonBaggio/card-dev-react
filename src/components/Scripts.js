@@ -23,9 +23,11 @@ export function Repos() {
                     {userData.map(repo => (
                         <div key={repo.id} className='col-md-4'>
                             <div className='content-card p-3'>
-                                <h3>{repo.name}</h3>
-                                <p>{repo.description}</p>
-                                <a className='btn btn-link-repos' href={repo.html_url} target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+                                <div>
+                                    <h3>{repo.name}</h3>
+                                    <p>{repo.description}</p>
+                                    <a className='btn btn-link-repos' href={repo.html_url} target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+                                </div>
                             </div>
                         </div>
                     ))}
