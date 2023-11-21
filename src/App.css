@@ -1,108 +1,126 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap");
 @import url("/node_modules/bootstrap/dist/css/bootstrap-grid.css");
-/*sass src/App.scss src/App.css*/
-body {
-  background-color: #fff;
-}
-body .menu {
+/*sass --watch  src/App.scss src/App.css*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
   padding: 0;
-  height: 30px;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-body .menu li {
-  float: left;
-  margin-right: 15px;
-  font-family: "Montserrat", sans-serif;
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
   list-style: none;
 }
-body .menu li a {
-  color: #000;
-  text-decoration: none;
+
+blockquote, q {
+  quotes: none;
 }
-body .menu li a:hover {
-  color: #000;
-  text-decoration: underline;
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
 }
-body .base-perfil {
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  line-height: 1;
   background-color: #fff;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  font-family: "Montserrat", sans-serif;
-  margin: 20px 0px;
 }
-body .base-perfil .perfil {
+body .content-home-top {
+  background-color: #000;
+  background: linear-gradient(90deg, #090909 0%, rgba(11, 11, 11, 0.55) 67%, rgba(13, 13, 13, 0) 93.22%);
+  background-image: url(/public/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 845px;
+  padding: 0;
+}
+body .content-home-top .topo {
   display: flex;
-  align-content: flex-end;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-body .base-perfil .perfil h1 {
-  margin: 0;
-  font-size: 18px;
-}
-body .base-perfil .perfil p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-}
-body .d-flex {
-  display: flex;
-  align-content: flex-end;
+  align-content: center;
   align-items: center;
   justify-content: space-between;
-}
-body .btn-contato {
-  margin-top: 15px;
   width: 100%;
-  padding: 10px;
-  background-color: #4861cf;
-  border: 2px solid #4861cf;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-  transition: 1s;
-  text-align: center;
 }
-body .btn-contato:hover {
-  background-color: #ffffff;
-  border: 2px solid #4861cf;
-  border-radius: 5px;
-  color: #4861cf;
-  font-size: 18px;
+body .content-home-top .topo .menu {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  width: 1366px;
 }
-body .user-avatar {
+body .content-home-top .topo .menu li {
+  float: left;
   margin-right: 15px;
-  border-radius: 10px;
-}
-body .list_skins {
-  list-style: none;
-}
-body .follow {
-  display: grid;
-}
-body .content-card {
-  background: #DBECFF;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-body .content-card p {
-  line-height: 25px;
-}
-body .btn-link-repos {
-  width: 94%;
-  padding: 10px;
-  background-color: #4861cf;
-  border: 2px solid #4861cf;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 18px;
-  transition: 1s;
   text-align: center;
-  display: block;
+}
+body .content-home-top .topo .menu li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18.504px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
   text-decoration: none;
+}
+body .content-home-top .topo .menu li :hover {
+  color: #DCA63D;
+}
+body .content-home-top .topo .logo {
+  float: left;
+}
+body .content-home h1 {
+  background: linear-gradient(90deg, #2CA2B4 0%, #5598DE 24%, #7F87FF 45%, #F65AAD 76%, #EC3D43 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Akira Expanded;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 52.008px;
+  letter-spacing: -0.144px;
+}
+body .content-home p {
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 41.455px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44.916px;
+  letter-spacing: -0.124px;
+}
+body .content-home p span {
+  color: #979797;
 }
 @media screen and (max-width: 500px) {
   body .d-flex {
