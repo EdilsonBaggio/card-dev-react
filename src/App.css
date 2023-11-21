@@ -98,7 +98,10 @@ body .content-home-top .topo .menu li :hover {
 body .content-home-top .topo .logo {
   float: left;
 }
-body .content-home h1 {
+body .content-home .content-titulo {
+  padding: 100px 0px;
+}
+body .content-home .content-titulo h1 {
   background: linear-gradient(90deg, #2CA2B4 0%, #5598DE 24%, #7F87FF 45%, #F65AAD 76%, #EC3D43 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -110,7 +113,7 @@ body .content-home h1 {
   line-height: 52.008px;
   letter-spacing: -0.144px;
 }
-body .content-home p {
+body .content-home .content-titulo p {
   color: #FFF;
   font-family: Helvetica;
   font-size: 41.455px;
@@ -119,7 +122,7 @@ body .content-home p {
   line-height: 44.916px;
   letter-spacing: -0.124px;
 }
-body .content-home p span {
+body .content-home .content-titulo p span {
   color: #979797;
 }
 @media screen and (max-width: 500px) {

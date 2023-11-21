@@ -200,28 +200,31 @@ body{
         }
     }
     .content-home{
-        h1{
-            background: linear-gradient(90deg, #2CA2B4 0%, #5598DE 24%, #7F87FF 45%, #F65AAD 76%, #EC3D43 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-family: Akira Expanded;
-            font-size: 48px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: 52.008px;
-            letter-spacing: -0.144px;
-        }
-        p{
-            color: #FFF;
-            font-family: Helvetica;
-            font-size: 41.455px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 44.916px;
-            letter-spacing: -0.124px;
-            span{
-                color: #979797;
+        .content-titulo{
+            padding: 100px 0px;
+            h1{
+                background: linear-gradient(90deg, #2CA2B4 0%, #5598DE 24%, #7F87FF 45%, #F65AAD 76%, #EC3D43 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family: Akira Expanded;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 52.008px;
+                letter-spacing: -0.144px;
+            }
+            p{
+                color: #FFF;
+                font-family: Helvetica;
+                font-size: 41.455px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 44.916px;
+                letter-spacing: -0.124px;
+                span{
+                    color: #979797;
+                }
             }
         }
     }

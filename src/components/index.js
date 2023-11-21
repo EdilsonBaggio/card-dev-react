@@ -36,8 +36,24 @@ export function Home() {
 export function ConteudoHome() {
     return (
         <div className="content-home">
-            <h1>Rahadiansyah</h1>
-            <p><span>Designing</span>with purpose and precision</p>
+            <div className="content-titulo">
+                <h1>Rahadiansyah</h1>
+                <p><span>Designing</span>with purpose and precision</p>
+            </div>
+            <div className="row">
+                <div className="col-md-3">
+                    teste
+                </div>
+                <div className="col-md-3">
+                    teste
+                </div>
+                <div className="col-md-3">
+                    teste
+                </div>
+                <div className="col-md-3">
+                    teste
+                </div>
+            </div>
         </div>
     );
 }
