@@ -39,7 +39,6 @@ export function Repos() {
     );
 }
 
-
 export function WhatsApp() {
     return (
         <a href="https://wa.me/5511991680375">

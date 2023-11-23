@@ -53,20 +53,13 @@ table {
 
 body {
   line-height: 1;
-  background-color: #fff;
+  background-color: #acacac;
 }
 body .content-home-top {
-  background-color: #000;
-  background: linear-gradient(90deg, #090909 0%, rgba(11, 11, 11, 0.55) 67%, rgba(13, 13, 13, 0) 93.22%);
-  background-image: url(/public/background.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 845px;
   padding: 0;
 }
 body .content-home-top .topo {
-  display: flex;
+  display: none;
   align-content: center;
   align-items: center;
   justify-content: space-between;
@@ -98,25 +91,31 @@ body .content-home-top .topo .menu li :hover {
 body .content-home-top .topo .logo {
   float: left;
 }
+body .content-home {
+  border-top: 6px solid #000;
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
 body .content-home .content-titulo {
-  padding: 100px 0px;
+  padding: 50px 50px;
+}
+body .content-home .content-titulo .user-avatar {
+  border-radius: 100px;
+  border: 5px solid #000;
 }
 body .content-home .content-titulo h1 {
-  background: linear-gradient(90deg, #2CA2B4 0%, #5598DE 24%, #7F87FF 45%, #F65AAD 76%, #EC3D43 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: Akira Expanded;
-  font-size: 48px;
+  font-family: Arial;
+  font-size: 60px;
   font-style: normal;
-  font-weight: 800;
-  line-height: 52.008px;
-  letter-spacing: -0.144px;
+  font-weight: 700;
+  line-height: 70px;
 }
 body .content-home .content-titulo p {
-  color: #FFF;
-  font-family: Helvetica;
-  font-size: 41.455px;
+  color: #505050;
+  font-family: Arial;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 44.916px;
@@ -124,6 +123,57 @@ body .content-home .content-titulo p {
 }
 body .content-home .content-titulo p span {
   color: #979797;
+}
+body .content-home .content-left {
+  padding-left: 50px;
+}
+body .content-home .content-left h2 {
+  color: #73808D;
+  font-family: Arial;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+body .content-home .content-left h3 {
+  color: #000;
+  font-family: Arial;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 30px;
+}
+body .content-home .content-left h4 {
+  color: #7a7878;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+body .content-home .content-left span {
+  color: #363535;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+body .content-home .content-left p {
+  color: #363535;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-top: 5px;
+  padding-right: 50px;
+}
+body .content-home .content-right p {
+  color: #363535;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-top: 5px;
+  padding-right: 50px;
 }
 @media screen and (max-width: 500px) {
   body .d-flex {
