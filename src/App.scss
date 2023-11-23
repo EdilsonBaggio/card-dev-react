@@ -168,6 +168,7 @@ body{
             }
         }
         .content-right{
+            padding-left: 0;
             p{
                 color: #888585;
                 font-family: $fontMontserrat;
@@ -182,13 +183,25 @@ body{
                 span{
                     color: #363535;
                     font-family: $fontMontserrat;
-                    font-size: 18px;
+                    font-size: 16px;
                     font-weight: 500;
                     line-height: 30px;
                 }
+                @media screen and (max-width:1024px){
+                    width: 100%;
+                }
+            }
+            @media screen and (max-width:1024px){
+                padding: 100px;
             }
         }
-    }
-    @media screen and (max-width:500px){
+        .row{
+            @media screen and (max-width:1024px){
+                .col-sm-9,
+                .col-sm-3{
+                    width: 100%;
+                }
+            }
+        }
     }
 }

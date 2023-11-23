@@ -168,6 +168,9 @@ body .content-home .content-left p {
   padding-top: 5px;
   padding-right: 100px;
 }
+body .content-home .content-right {
+  padding-left: 0;
+}
 body .content-home .content-right p {
   color: #888585;
   font-family: "Montserrat", sans-serif;
@@ -183,9 +186,25 @@ body .content-home .content-right .follow {
 body .content-home .content-right .follow span {
   color: #363535;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 30px;
+}
+@media screen and (max-width: 1024px) {
+  body .content-home .content-right .follow {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body .content-home .content-right {
+    padding: 100px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body .content-home .row .col-sm-9,
+  body .content-home .row .col-sm-3 {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
