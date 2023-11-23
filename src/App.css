@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap");
 @import url("/node_modules/bootstrap/dist/css/bootstrap-grid.css");
+@import url("bootstrap/dist/css/bootstrap.min.css");
 /*sass --watch  src/App.scss src/App.css*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -103,9 +104,10 @@ body .content-home .content-titulo {
 body .content-home .content-titulo .user-avatar {
   border-radius: 100px;
   border: 5px solid #000;
+  margin-left: 15px;
 }
 body .content-home .content-titulo h1 {
-  font-family: Arial;
+  font-family: "Montserrat", sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
@@ -113,7 +115,7 @@ body .content-home .content-titulo h1 {
 }
 body .content-home .content-titulo p {
   color: #505050;
-  font-family: Arial;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -129,7 +131,7 @@ body .content-home .content-left {
 }
 body .content-home .content-left h2 {
   color: #73808D;
-  font-family: Arial;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
@@ -138,57 +140,52 @@ body .content-home .content-left h2 {
 }
 body .content-home .content-left h3 {
   color: #000;
-  font-family: Arial;
+  font-family: "Montserrat", sans-serif;
   font-size: 23px;
   font-weight: 800;
   line-height: 30px;
 }
 body .content-home .content-left h4 {
   color: #7a7878;
-  font-family: Arial;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
 }
 body .content-home .content-left span {
   color: #363535;
-  font-family: Arial;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
 }
 body .content-home .content-left p {
   color: #363535;
-  font-family: Arial;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
   padding-top: 5px;
   padding-right: 100px;
 }
-body .content-home .content-right {
-  padding-left: 0;
-}
 body .content-home .content-right p {
   color: #888585;
-  font-family: Arial;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   padding-top: 5px;
   font-style: italic;
 }
-@media screen and (max-width: 500px) {
-  body .d-flex {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  body .list_skins {
-    margin-top: 40px;
-  }
+body .content-home .content-right .follow {
+  width: 250px;
+}
+body .content-home .content-right .follow span {
+  color: #363535;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
 }
 
 /*# sourceMappingURL=App.css.map */

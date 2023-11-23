@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { ProgressBar } from 'react-bootstrap';
 import Logo from '../logo.svg';
 
 export function Link({ href, children }) {
@@ -78,6 +79,39 @@ export function Usergit() {
     );
 }
 
+export function Followersgit() {
+    const [userData, setUserData] = useState(null);
+    const username = 'edilsonbaggio'; // Substitua pelo nome de usuário do GitHub desejado
+
+    useEffect(() => {
+        fetch(`https://api.github.com/users/${username}`)
+        .then(response => response.json())
+        .then(data => {
+            setUserData(data);
+        })
+        .catch(error => {
+            console.error('Erro ao buscar os dados do usuário:', error);
+        });
+    }, []);
+
+    return (
+        <div>
+        {userData ? (
+                <div>
+                    <div className="follow d-grid mt-3">
+                        <span>Seguidores</span>
+                        <ProgressBar animated variant="success" now={userData.followers} />
+                        <span>Seguindo</span>
+                        <ProgressBar animated variant="success" now={userData.following} />
+                    </div>
+                </div>
+            ) : (
+                <p>Carregando...</p>
+            )}
+        </div>
+    );
+}
+
 export function ConteudoHome() {
     return (
         <div className="content-home">
@@ -111,9 +145,10 @@ export function ConteudoHome() {
                     </div>
                 </div>
                 <div className="col-md-3 content-right">
-                    <p>yourmail@gmail.com</p>
+                    <p>edilsoncicero_@hotmail.com</p>
                     <p>11 99168-0375</p>
                     <p>GitHub</p>
+                    <Followersgit />
                 </div>
             </div>
         </div>
