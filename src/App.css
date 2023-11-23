@@ -98,7 +98,7 @@ body .content-home {
   border-radius: 5px;
 }
 body .content-home .content-titulo {
-  padding: 50px 90px;
+  padding: 50px 70px;
 }
 body .content-home .content-titulo .user-avatar {
   border-radius: 100px;
@@ -177,7 +177,6 @@ body .content-home .content-right p {
   line-height: 18px;
   padding-top: 5px;
   font-style: italic;
-  padding-left: 30px;
 }
 @media screen and (max-width: 500px) {
   body .d-flex {

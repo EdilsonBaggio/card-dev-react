@@ -37,7 +37,7 @@ export function Usergit() {
     const [userData, setUserData] = useState(null);
     const username = 'edilsonbaggio'; // Substitua pelo nome de usuário do GitHub desejado
     const user = {
-        avatar_size: '160',
+        avatar_size: '150',
     };
     
     useEffect(() => {
@@ -60,7 +60,7 @@ export function Usergit() {
                         <h1>{userData.name}</h1>
                         <p><span>DevOps</span>Fullstack</p>
                     </div>
-                    <div className="col-md-3 text-center">
+                    <div className="col-md-3">
                     <img
                         className="user-avatar"
                         src={userData.avatar_url}
