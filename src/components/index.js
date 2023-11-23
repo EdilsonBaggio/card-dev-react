@@ -127,18 +127,28 @@ export function ConteudoHome() {
                 <div className="col-sm-9 curriculo">
                     <div className="row">
                         <div className="col-sm-12 content-left">
-                            <h2>Experience</h2>
-                            <h3>Senior UI/UX Product Designer</h3>
-                            <h4>Enterprise name</h4>
-                            <span>Aug 2018 - Present - 1 year, Paris</span>
-                            <p>Directly collaborated with CEO and Product team to prototype, design and deliver the UI and UX experience with a lean design process: research, design, test, and iterate.</p>
+                            <h2>Experiência</h2>
+                            <h3>DevOps Fullstack</h3>
+                            <h4>Kasi Desenvolvimento e Soluções em TI</h4>
+                            <span>Fevereiro 2021 - Atual - 3 anos</span>
+                            <p>Desenvolvimento de interfaces front-end responsivas e interativas usando HTML, CSS e JavaScript.</p>
+                            <p>Colaboração com a equipe de design e back-end para implementar as especificações visuais e funcionais do projeto.</p>
+                            <p>Otimização de desempenho e compatibilidade com diferentes navegadores.</p>
+                            <p>Participação em revisões de código e melhorias contínuas do projeto.</p>
+                            <p>Integração de APIs e serviços web para garantir a comunicação eficiente com o back-end.</p>
+                            <p>Testes de unidade e integração para garantir a qualidade do código entregue.</p>
+                            <p>Resolução de bugs e problemas de compatibilidade.</p>
                         </div>
                         <div className="col-sm-12 content-left">
-                            <h2>Experience</h2>
-                            <h3>Senior UI/UX Product Designer</h3>
-                            <h4>Enterprise name</h4>
-                            <span>Aug 2018 - Present - 1 year, Paris</span>
-                            <p>Directly collaborated with CEO and Product team to prototype, design and deliver the UI and UX experience with a lean design process: research, design, test, and iterate.</p>
+                            <h2>Experiência</h2>
+                            <h3>Desenvolvedor Front-end</h3>
+                            <h4>Afonso Carlos Sandríni</h4>
+                            <span>Fevereiro 2021 - Atual - 6 anos</span>
+                            <p>Desenvolvimento de interfaces front-end responsivas e interativas usando HTML, CSS e JavaScript.</p>
+                            <p>Colaboração com a equipe de design e back-end para implementar as especificações visuais e funcionais do projeto.</p>
+                            <p>Otimização de desempenho e compatibilidade com diferentes navegadores.</p>
+                            <p>Participação em revisões de código e melhorias contínuas do projeto.</p>
+                            <p>Integração de APIs e serviços web para garantir a comunicação eficiente com o back-end.</p>
                         </div>
                         <div className="col-sm-12 content-left">
                             <h2>Experience</h2>
