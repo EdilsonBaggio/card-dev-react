@@ -37,7 +37,7 @@ export function Usergit() {
     const [userData, setUserData] = useState(null);
     const username = 'edilsonbaggio'; // Substitua pelo nome de usuário do GitHub desejado
     const user = {
-        avatar_size: '135',
+        avatar_size: '160',
     };
     
     useEffect(() => {
@@ -60,7 +60,7 @@ export function Usergit() {
                         <h1>{userData.name}</h1>
                         <p><span>DevOps</span>Fullstack</p>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-3 text-center">
                     <img
                         className="user-avatar"
                         src={userData.avatar_url}
@@ -87,6 +87,20 @@ export function ConteudoHome() {
             <div className="row">
                 <div className="col-md-9">
                     <div className="row">
+                        <div className="col-md-12 content-left">
+                            <h2>Experience</h2>
+                            <h3>Senior UI/UX Product Designer</h3>
+                            <h4>Enterprise name</h4>
+                            <span>Aug 2018 - Present - 1 year, Paris</span>
+                            <p>Directly collaborated with CEO and Product team to prototype, design and deliver the UI and UX experience with a lean design process: research, design, test, and iterate.</p>
+                        </div>
+                        <div className="col-md-12 content-left">
+                            <h2>Experience</h2>
+                            <h3>Senior UI/UX Product Designer</h3>
+                            <h4>Enterprise name</h4>
+                            <span>Aug 2018 - Present - 1 year, Paris</span>
+                            <p>Directly collaborated with CEO and Product team to prototype, design and deliver the UI and UX experience with a lean design process: research, design, test, and iterate.</p>
+                        </div>
                         <div className="col-md-12 content-left">
                             <h2>Experience</h2>
                             <h3>Senior UI/UX Product Designer</h3>

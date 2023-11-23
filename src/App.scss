@@ -52,7 +52,7 @@ $fontMontserrat: 'Montserrat', sans-serif;
 
 body{
     line-height: 1;
-    background-color:#acacac;
+    background-color:#FEDB25;
 //    .menu{
 //         padding: 0;
 //         height: 30px;
@@ -196,10 +196,9 @@ body{
         border-top: 6px solid #000;
         margin-top: 50px;
         background-color: #fff;
-        padding: 15px;
         border-radius: 5px;
         .content-titulo{
-            padding: 50px 50px;
+            padding: 50px 90px;
             .user-avatar{
                 border-radius: 100px;
                 border: 5px solid #000;
@@ -225,7 +224,8 @@ body{
             }
         }
         .content-left{
-            padding-left: 50px;
+            padding-left: 100px;
+            margin-bottom: 50px;
             h2{
                 color: #73808D;
                 font-family: Arial;
@@ -263,18 +263,20 @@ body{
                 font-weight: 500;
                 line-height: 20px;
                 padding-top: 5px;
-                padding-right: 50px;
+                padding-right: 100px;
             }
         }
         .content-right{
+            padding-left: 0;
             p{
-                color: #363535;
+                color: #888585;
                 font-family: Arial;
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 500;
-                line-height: 20px;
+                line-height: 18px;
                 padding-top: 5px;
-                padding-right: 50px;
+                font-style: italic;
+                padding-left: 30px;
             }
         }
     }
