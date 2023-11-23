@@ -1,10 +1,9 @@
-# Card Github com React.
+# Curriculo em React com API para pagar os dados do GitHub.
 
 Consumindo dados do Perfil do Github com React. 
-Este card foi um estudo da biblioteca para consumir os dados do perfil pelo github.
+Este card foi um estudo da biblioteca para consumir os dados do perfil pelo github foi ultilizado o framework React Bootstrap e Sass para estilização do css.
 
-![image](https://github.com/EdilsonBaggio/card-dev-react/assets/71347535/186f32f3-f66c-43c7-b55b-75e6530c1059)
+![image](https://github.com/EdilsonBaggio/card-dev-react/assets/71347535/b0f6c635-d34f-46d6-8483-06a7f7f87e69)
 
-
-Link: https://card-dev-react.vercel.app/
+Link: https://edilsonsantos.vercel.app/
 
