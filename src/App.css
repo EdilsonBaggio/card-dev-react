@@ -97,6 +97,7 @@ body .content-home {
   margin-top: 50px;
   background-color: #fff;
   border-radius: 5px;
+  margin-bottom: 50px;
 }
 body .content-home .content-titulo {
   padding: 50px 70px;
@@ -113,6 +114,12 @@ body .content-home .content-titulo h1 {
   font-weight: 700;
   line-height: 70px;
 }
+@media screen and (max-width: 1024px) {
+  body .content-home .content-titulo h1 {
+    font-size: 6vw;
+    line-height: 50px;
+  }
+}
 body .content-home .content-titulo p {
   color: #505050;
   font-family: "Montserrat", sans-serif;
@@ -121,6 +128,12 @@ body .content-home .content-titulo p {
   font-weight: 700;
   line-height: 44.916px;
   letter-spacing: -0.124px;
+}
+@media screen and (max-width: 1024px) {
+  body .content-home .content-titulo p {
+    font-size: 4vw;
+    line-height: 30px;
+  }
 }
 body .content-home .content-titulo p span {
   color: #979797;
@@ -204,6 +217,20 @@ body .content-home .content-right .follow span {
   body .content-home .row .col-sm-9,
   body .content-home .row .col-sm-3 {
     width: 100%;
+  }
+  body .content-home .row .nome {
+    order: 2;
+    text-align: center;
+  }
+  body .content-home .row .foto {
+    order: 1;
+    text-align: center;
+  }
+  body .content-home .row .curriculo {
+    order: 4;
+  }
+  body .content-home .row .dados {
+    order: 3;
   }
 }
 

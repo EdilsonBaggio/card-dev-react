@@ -59,11 +59,11 @@ export function Usergit() {
         {userData ? (
             <div>
                 <div className="row">
-                    <div className="col-sm-9">
+                    <div className="col-sm-9 nome">
                         <h1>{userData.name}</h1>
                         <p><span>DevOps</span>Fullstack</p>
                     </div>
-                    <div className="col-sm-3">
+                    <div className="col-sm-3 foto">
                     <Image 
                         className="user-avatar"
                         src={userData.avatar_url}
@@ -120,7 +120,7 @@ export function ConteudoHome() {
                <Usergit />
             </div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 curriculo">
                     <div className="row">
                         <div className="col-sm-12 content-left">
                             <h2>Experience</h2>
@@ -145,7 +145,7 @@ export function ConteudoHome() {
                         </div>
                     </div>
                 </div>
-                <div className="col-sm-3 content-right">
+                <div className="col-sm-3 content-right dados">
                     <p>edilsoncicero_@hotmail.com</p>
                     <p>11 99168-0375</p>
                     <p>GitHub</p>
