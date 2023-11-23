@@ -142,6 +142,11 @@ body .content-home .content-left {
   padding-left: 85px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 500px) {
+  body .content-home .content-left {
+    padding: 30px;
+  }
+}
 body .content-home .content-left h2 {
   color: #73808D;
   font-family: "Montserrat", sans-serif;
@@ -181,6 +186,11 @@ body .content-home .content-left p {
   padding-top: 5px;
   padding-right: 100px;
 }
+@media screen and (max-width: 500px) {
+  body .content-home .content-left p {
+    padding: 0px;
+  }
+}
 body .content-home .content-right {
   padding-left: 0;
 }
@@ -211,6 +221,11 @@ body .content-home .content-right .follow span {
 @media screen and (max-width: 1024px) {
   body .content-home .content-right {
     padding: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .content-home .content-right {
+    padding: 30px;
   }
 }
 @media screen and (max-width: 1024px) {
