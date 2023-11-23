@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { ProgressBar } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import Spinner from 'react-bootstrap/Spinner';
-import Logo from '../logo.svg';
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 
 export function Link({ href, children }) {
     return (
@@ -14,12 +16,11 @@ export function Link({ href, children }) {
 
 export function Menu() {
     return (
-        <div className="topo">
-            <img className="logo" src={Logo} alt="Minha Imagem" width='60'/>
+        <div>
             <ul className="menu">
-                <Link href="/">Home</Link>
-                <Link href="/">Portofolio</Link>
-                <Link href="/">Contato</Link>
+                <Link href="/"><FaLinkedin /></Link>
+                <Link href="/"><FaGithub /></Link>
+                <Link href="/"><FaWhatsapp /></Link>
             </ul>
         </div>
     );
@@ -29,7 +30,6 @@ export function Home() {
     return (
         <div>
             <header>
-                <Menu/>
                 <ConteudoHome />
             </header>
         </div>
@@ -100,6 +100,10 @@ export function Followersgit() {
         {userData ? (
                 <div>
                     <div className="follow d-grid mt-3">
+                        <h4>GitHub</h4>
+                        <p className='mb-3'>{userData.location}</p>
+                        <p className='mb-3'><a href={userData.blog}>edilsonsantos.website</a></p>
+                        <p className='mb-3'>{userData.bio}</p>
                         <span>Seguidores</span>
                         <ProgressBar animated variant="success" now={userData.followers} />
                         <span>Seguindo</span>
@@ -148,10 +152,45 @@ export function ConteudoHome() {
                 <div className="col-sm-3 content-right dados">
                     <p>edilsoncicero_@hotmail.com</p>
                     <p>11 99168-0375</p>
-                    <p>GitHub</p>
+                    <RedesSociais />
                     <Followersgit />
                 </div>
             </div>
         </div>
+    );
+}
+
+export function OffCanvasRedesSociais({ name, ...props }) {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    return (
+        <>
+        <Button variant="primary" onClick={handleShow} className="me-2 btn-contato">
+            Entre em contato.
+        </Button>
+        <Offcanvas show={show} onHide={handleClose} {...props}>
+            <Offcanvas.Header closeButton>
+            <Offcanvas.Title>Redes Sociais</Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+                Some text as placeholder. In real life you can have the elements you
+                have chosen. Like, text, images, lists, etc.
+                <Menu/>
+            </Offcanvas.Body>
+        </Offcanvas>
+        </>
+    );
+}
+
+export function RedesSociais() {
+    return (
+        <>
+        {['end'].map((placement, idx) => (
+            <OffCanvasRedesSociais key={idx} placement={placement} name={placement} />
+        ))}
+        </>
     );
 }

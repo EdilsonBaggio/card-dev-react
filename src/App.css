@@ -10,7 +10,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, strong, sub, menusup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -206,6 +206,13 @@ body .content-home .content-right p {
 body .content-home .content-right .follow {
   width: 250px;
 }
+body .content-home .content-right .follow h4 {
+  color: #363535;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
 body .content-home .content-right .follow span {
   color: #363535;
   font-family: "Montserrat", sans-serif;
@@ -228,6 +235,21 @@ body .content-home .content-right .follow span {
     padding: 30px;
   }
 }
+body .content-home .content-right .btn-contato {
+  width: 200px;
+  margin-top: 15px;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+body .content-home .content-right .btn-contato :hover {
+  background-color: #000;
+  color: #fff;
+}
+body .content-home .content-right .btn-contato:hover {
+  background-color: #000;
+  color: #fff;
+}
 @media screen and (max-width: 1024px) {
   body .content-home .row .col-sm-9,
   body .content-home .row .col-sm-3 {
@@ -247,6 +269,17 @@ body .content-home .content-right .follow span {
   body .content-home .row .dados {
     order: 3;
   }
+}
+body .offcanvas-body .menu {
+  margin-top: 15px;
+}
+body .offcanvas-body .menu li {
+  float: left;
+  font-size: 35px;
+  margin-right: 15px;
+}
+body .offcanvas-body .menu li a {
+  color: #000;
 }
 
 /*# sourceMappingURL=App.css.map */
