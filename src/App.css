@@ -270,6 +270,13 @@ body .content-home .content-right .btn-contato:hover {
     order: 3;
   }
 }
+body .offcanvas-title {
+  color: #363535;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+}
 body .offcanvas-body .menu {
   margin-top: 15px;
 }
@@ -280,6 +287,13 @@ body .offcanvas-body .menu li {
 }
 body .offcanvas-body .menu li a {
   color: #000;
+}
+body .offcanvas-body p {
+  color: #363535;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -259,7 +259,13 @@ body{
         }
         margin-bottom: 50px;
     }
-
+    .offcanvas-title{
+        color: #363535;
+        font-family: $fontMontserrat;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23px;
+    }
     .offcanvas-body{
         .menu{
             margin-top: 15px;
@@ -271,6 +277,13 @@ body{
                     color: #000;
                 }
             }
+        }
+        p{
+            color: #363535;
+            font-family: $fontMontserrat;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 23px;
         }
     }
 }

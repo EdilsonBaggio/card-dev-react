@@ -5,6 +5,7 @@ import Spinner from 'react-bootstrap/Spinner';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
+import { MdAlternateEmail } from "react-icons/md";
 
 export function Link({ href, children }) {
     return (
@@ -20,7 +21,6 @@ export function Menu() {
             <ul className="menu">
                 <Link href="/"><FaLinkedin /></Link>
                 <Link href="/"><FaGithub /></Link>
-                <Link href="/"><FaWhatsapp /></Link>
             </ul>
         </div>
     );
@@ -150,8 +150,8 @@ export function ConteudoHome() {
                     </div>
                 </div>
                 <div className="col-sm-3 content-right dados">
-                    <p>edilsoncicero_@hotmail.com</p>
-                    <p>11 99168-0375</p>
+                    <p><MdAlternateEmail /> edilsoncicero_@hotmail.com</p>
+                    <p><FaWhatsapp />  11 99168-0375</p>
                     <RedesSociais />
                     <Followersgit />
                 </div>
@@ -173,11 +173,12 @@ export function OffCanvasRedesSociais({ name, ...props }) {
         </Button>
         <Offcanvas show={show} onHide={handleClose} {...props}>
             <Offcanvas.Header closeButton>
-            <Offcanvas.Title>Redes Sociais</Offcanvas.Title>
+            <Offcanvas.Title>Sobre mim</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-                Some text as placeholder. In real life you can have the elements you
-                have chosen. Like, text, images, lists, etc.
+                <p>
+                DevOps Fullstack com ampla experiência na criação de interfaces interativas e responsivas. Estou comprometido em utilizar meu conhecimento e conjunto de habilidades para aprimorar a experiência do usuário e a usabilidade de aplicações web. Meu objetivo é integrar perfeitamente o desenvolvimento e operações, otimizando processos e garantindo que os sistemas sejam eficientes, confiáveis e de alto desempenho.
+                </p>
                 <Menu/>
             </Offcanvas.Body>
         </Offcanvas>
