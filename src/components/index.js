@@ -203,7 +203,7 @@ export function OffCanvasRedesSociais({ name, ...props }) {
     return (
         <>
         <Button variant="primary" onClick={handleShow} className="me-2 btn-contato">
-            Entre em contato.
+            Sobre mim
         </Button>
         <Offcanvas show={show} onHide={handleClose} {...props}>
             <Offcanvas.Header closeButton>
