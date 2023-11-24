@@ -232,41 +232,27 @@ export function RedesSociais() {
         </>
     );
 }
-
-export function useFormStatus() {
-    const [pending, setPending] = useState(false);
-  
-    // ... lógica para controlar o estado de 'pending'
-  
-    return { pending }; // Certifique-se de retornar 'pending'
-}
-
-export function Submit() {
-    const { pending } = useFormStatus();
-    return (
-      <button type="submit" className="btn btn-dark" disabled={pending}>
-        {pending ? "Enviando..." : "Enviar"}
-      </button>
-    );
-}
   
 export function Form({ action }) {
+    const {nome, email, mensagem} = useState('');
     return (
         <div className="formulario">
             <form action={action}>
                 <div className="mb-3">
                     <label for="nomeInput" className="form-label">Nome</label>
-                    <input name="nome" type="email" className="form-control" id="nomeInput" />
+                    <input name="nome" type="email" className="form-control" id="nomeInput" value={nome} />
                 </div>
                 <div className="mb-3">
                     <label for="emailInput" className="form-label">Email</label>
-                    <input name="email" type="email" className="form-control" id="emailInput" />
-                </div>
+                    <input name="email" type="email" className="form-control" id="emailInput" value={email} />
+                </div>, 
                 <div className="mb-3">
                     <label for="mensagemTextarea" className="form-label">Mensagem</label>
-                    <textarea name="mensagem" className="form-control" rows={4} cols={40} id="mensagemTextarea" />
+                    <textarea name="mensagem" className="form-control" rows={4} cols={40} id="mensagemTextarea" value={mensagem} />
                 </div>
-                <Submit />
+                <button type="submit" className="btn btn-dark">
+                    Enviar
+                </button>
             </form>
         </div>
     );
