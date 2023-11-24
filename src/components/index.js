@@ -141,21 +141,33 @@ export function ConteudoHome() {
                         </div>
                         <div className="col-sm-12 content-left">
                             <h2>Experiência</h2>
-                            <h3>Desenvolvedor Front-end</h3>
+                            <h3>Desenvolvedor Fullstack</h3>
                             <h4>Afonso Carlos Sandríni</h4>
-                            <span>Fevereiro 2021 - Atual - 6 anos</span>
-                            <p>Desenvolvimento de interfaces front-end responsivas e interativas usando HTML, CSS e JavaScript.</p>
+                            <span>Setembro 2014 - 6 anos</span>
+                            <p>Desenvolvimento de interfaces front-end responsivas e interativas usando HTML, PHP, CSS e JavaScript.</p>
                             <p>Colaboração com a equipe de design e back-end para implementar as especificações visuais e funcionais do projeto.</p>
                             <p>Otimização de desempenho e compatibilidade com diferentes navegadores.</p>
                             <p>Participação em revisões de código e melhorias contínuas do projeto.</p>
                             <p>Integração de APIs e serviços web para garantir a comunicação eficiente com o back-end.</p>
                         </div>
                         <div className="col-sm-12 content-left">
-                            <h2>Experience</h2>
-                            <h3>Senior UI/UX Product Designer</h3>
-                            <h4>Enterprise name</h4>
-                            <span>Aug 2018 - Present - 1 year, Paris</span>
-                            <p>Directly collaborated with CEO and Product team to prototype, design and deliver the UI and UX experience with a lean design process: research, design, test, and iterate.</p>
+                            <h2>Experiência</h2>
+                            <h3>Desenvolvedor Front-end</h3>
+                            <h4>Libero +</h4>
+                            <span>Janeiro 2014 - Atual - 6 anos</span>
+                            <p>Desenvolvimento de interfaces front-end responsivas e interativas usando HTML, PHP, CSS e JavaScript.</p>
+                            <p>Colaboração com a equipe de design e back-end para implementar as especificações visuais e funcionais do projeto.</p>
+                            <p>Otimização de desempenho e compatibilidade com diferentes navegadores.</p>
+                        </div>
+                        <div className="col-sm-12 content-left">
+                            <h2>Experiência</h2>
+                            <h3>Desenvolvedor Front-end</h3>
+                            <h4>UOL</h4>
+                            <span>Janeiro 2014 - Atual - 6 anos</span>
+                            <p>Prestação de suporte técnico a clientes via chat, e-mail e telefone, resolvendo dúvidas e problemas relacionados à hospedagem de sites e serviços relacionados.</p>
+                            <p>Identificação e resolução de questões técnicas, como problemas de DNS, e-mails, FTP, SSL e outros aspectos da hospedagem</p>
+                            <p>Configuração e gerenciamento de contas de hospedagem, domínios e bancos de dados.</p>
+                            <p>Acompanhamento proativo de tickets de suporte e garantia de atendimento dentro dos SLAs estabelecidos.</p>
                         </div>
                     </div>
                 </div>
@@ -164,6 +176,18 @@ export function ConteudoHome() {
                     <p><FaWhatsapp />  11 99168-0375</p>
                     <RedesSociais />
                     <Followersgit />
+                    <strong>Educação:</strong>
+                    <p>Tecnólogo em Análise e Desenvolvimento de Sistemas – Braz cubas – 2023</p>
+                    <strong>Habilidades Técnicas:</strong>
+                    <p>Linguagens: HTML5, CSS3, JavaScript (ES6+)</p>
+                    <p>Frameworks: React, Angular, Vue.js</p>
+                    <p>Pré-processadores CSS: Sass, Less</p>
+                    <p>Ferramentas de versionamento: Git, GitHub</p>
+                    <p>Gerenciamento de Pacotes: npm, Yarn</p>
+                    <p>Design Responsivo</p>
+                    <p>Conhecimentos básicos em UX/UI</p>
+                    <strong>Idiomas:</strong>
+                    <p>Inglês (avançado)</p>
                 </div>
             </div>
         </div>
