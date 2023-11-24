@@ -161,7 +161,7 @@ export function ConteudoHome() {
                         </div>
                         <div className="col-sm-12 content-left">
                             <h2>Experiência</h2>
-                            <h3>Desenvolvedor Front-end</h3>
+                            <h3>Suporte técnico</h3>
                             <h4>UOL</h4>
                             <span>Janeiro 2014 - Atual - 6 anos</span>
                             <p>Prestação de suporte técnico a clientes via chat, e-mail e telefone, resolvendo dúvidas e problemas relacionados à hospedagem de sites e serviços relacionados.</p>
