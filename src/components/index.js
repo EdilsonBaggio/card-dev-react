@@ -163,7 +163,7 @@ export function ConteudoHome() {
                             <h2>Experiência</h2>
                             <h3>Suporte técnico</h3>
                             <h4>UOL</h4>
-                            <span>Janeiro 2014 - Atual - 6 anos</span>
+                            <span>Maio 2013 - Atual - 1 ano</span>
                             <p>Prestação de suporte técnico a clientes via chat, e-mail e telefone, resolvendo dúvidas e problemas relacionados à hospedagem de sites e serviços relacionados.</p>
                             <p>Identificação e resolução de questões técnicas, como problemas de DNS, e-mails, FTP, SSL e outros aspectos da hospedagem</p>
                             <p>Configuração e gerenciamento de contas de hospedagem, domínios e bancos de dados.</p>
