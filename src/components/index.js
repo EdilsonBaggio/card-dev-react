@@ -176,7 +176,7 @@ export function ConteudoHome() {
                 <div className="col-sm-3 content-right dados">
                     <p><MdAlternateEmail /> edilsoncicero_@hotmail.com</p>
                     <p><FaWhatsapp />  11 99168-0375</p>
-                    <RedesSociais />
+                    <Sobre />
                     <Followersgit />
                     <strong>Educação:</strong>
                     <p>Tecnólogo em Análise e Desenvolvimento de Sistemas – Braz cubas – 2023</p>
@@ -196,7 +196,7 @@ export function ConteudoHome() {
     );
 }
 
-export function OffCanvasRedesSociais({ name, ...props }) {
+export function OffCanvasSobre({ name, ...props }) {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -223,11 +223,11 @@ export function OffCanvasRedesSociais({ name, ...props }) {
     );
 }
 
-export function RedesSociais() {
+export function Sobre() {
     return (
         <>
         {['end'].map((placement, idx) => (
-            <OffCanvasRedesSociais key={idx} placement={placement} name={placement} />
+            <OffCanvasSobre key={idx} placement={placement} name={placement} />
         ))}
         </>
     );
