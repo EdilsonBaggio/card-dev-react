@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { ProgressBar } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
@@ -7,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 import { MdAlternateEmail } from "react-icons/md";
+import axios from 'axios';
 
 
 export function Link({ href, children }) {
@@ -252,25 +252,19 @@ export function Form({ action }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Aqui você pode adicionar lógica de validação
+
         if (nome.trim() === '' || email.trim() === '' || mensagem.trim() === '') {
             alert('Por favor, preencha todos os campos.');
         } else {
-            // Se passar na validação, você pode fazer o que precisa com os dados
-            // Por exemplo, enviar para o servidor usando 'fetch' ou outra lógica
-            console.log('Dados a serem enviados:', formData);
-            // Aqui você pode fazer o envio dos dados usando 'fetch', axios, etc.
-            // fetch(action, {
-            //     method: 'POST',
-            //     body: JSON.stringify(formData),
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     }
-            // }).then(response => {
-            //     // Lidar com a resposta do servidor
-            // }).catch(error => {
-            //     // Lidar com erros
-            // });
+            axios.post(action, formData)
+                .then(response => {
+                    console.log('Resposta do servidor:', response.data);
+                    // Lógica para lidar com a resposta do servidor, se necessário
+                })
+                .catch(error => {
+                    console.error('Erro ao enviar os dados:', error);
+                    // Lógica para lidar com erros de envio
+                });
         }
     };
 
