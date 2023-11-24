@@ -234,21 +234,60 @@ export function Sobre() {
 }
   
 export function Form({ action }) {
-    const {nome, email, mensagem} = useState('');
+    const [formData, setFormData] = useState({
+        nome: '',
+        email: '',
+        mensagem: ''
+    });
+
+    const { nome, email, mensagem } = formData;
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Aqui você pode adicionar lógica de validação
+        if (nome.trim() === '' || email.trim() === '' || mensagem.trim() === '') {
+            alert('Por favor, preencha todos os campos.');
+        } else {
+            // Se passar na validação, você pode fazer o que precisa com os dados
+            // Por exemplo, enviar para o servidor usando 'fetch' ou outra lógica
+            console.log('Dados a serem enviados:', formData);
+            // Aqui você pode fazer o envio dos dados usando 'fetch', axios, etc.
+            // fetch(action, {
+            //     method: 'POST',
+            //     body: JSON.stringify(formData),
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     }
+            // }).then(response => {
+            //     // Lidar com a resposta do servidor
+            // }).catch(error => {
+            //     // Lidar com erros
+            // });
+        }
+    };
+
     return (
         <div className="formulario">
-            <form action={action}>
+            <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label for="nomeInput" className="form-label">Nome</label>
-                    <input name="nome" type="email" className="form-control" id="nomeInput" value={nome} />
+                    <label htmlFor="nomeInput" className="form-label">Nome</label>
+                    <input name="nome" type="text" className="form-control" id="nomeInput" value={nome} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
-                    <label for="emailInput" className="form-label">Email</label>
-                    <input name="email" type="email" className="form-control" id="emailInput" value={email} />
-                </div>, 
+                    <label htmlFor="emailInput" className="form-label">Email</label>
+                    <input name="email" type="email" className="form-control" id="emailInput" value={email} onChange={handleChange} />
+                </div>
                 <div className="mb-3">
-                    <label for="mensagemTextarea" className="form-label">Mensagem</label>
-                    <textarea name="mensagem" className="form-control" rows={4} cols={40} id="mensagemTextarea" value={mensagem} />
+                    <label htmlFor="mensagemTextarea" className="form-label">Mensagem</label>
+                    <textarea name="mensagem" className="form-control" rows={4} cols={40} id="mensagemTextarea" value={mensagem} onChange={handleChange} />
                 </div>
                 <button type="submit" className="btn btn-dark">
                     Enviar
