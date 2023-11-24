@@ -302,5 +302,9 @@ body .offcanvas-body p {
   font-weight: 300;
   line-height: 23px;
 }
+body .offcanvas-body .formulario {
+  clear: both;
+  margin-top: 100px !important;
+}
 
 /*# sourceMappingURL=App.css.map */

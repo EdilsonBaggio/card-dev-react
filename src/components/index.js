@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+
+import { useState, useEffect } from 'react';
 import { ProgressBar } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import Spinner from 'react-bootstrap/Spinner';
@@ -6,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 import { MdAlternateEmail } from "react-icons/md";
+
 
 export function Link({ href, children }) {
     return (
@@ -131,7 +133,7 @@ export function ConteudoHome() {
                             <h3>DevOps Fullstack</h3>
                             <h4>Kasi Desenvolvimento e Soluções em TI</h4>
                             <span>Fevereiro 2021 - Atual - 3 anos</span>
-                            <p>Desenvolvimento de interfaces front-end responsivas e interativas usando HTML, CSS e JavaScript.</p>
+                            <p>Desenvolvimento de interfaces front-end responsivas e interativas usando HTML, PHP, CSS e JavaScript.</p>
                             <p>Colaboração com a equipe de design e back-end para implementar as especificações visuais e funcionais do projeto.</p>
                             <p>Otimização de desempenho e compatibilidade com diferentes navegadores.</p>
                             <p>Participação em revisões de código e melhorias contínuas do projeto.</p>
@@ -163,7 +165,7 @@ export function ConteudoHome() {
                             <h2>Experiência</h2>
                             <h3>Suporte técnico</h3>
                             <h4>UOL</h4>
-                            <span>Maio 2013 - 7 meses</span>
+                            <span>Maio 2013 - 6 meses</span>
                             <p>Prestação de suporte técnico a clientes via chat, e-mail e telefone, resolvendo dúvidas e problemas relacionados à hospedagem de sites e serviços relacionados.</p>
                             <p>Identificação e resolução de questões técnicas, como problemas de DNS, e-mails, FTP, SSL e outros aspectos da hospedagem</p>
                             <p>Configuração e gerenciamento de contas de hospedagem, domínios e bancos de dados.</p>
@@ -180,7 +182,7 @@ export function ConteudoHome() {
                     <p>Tecnólogo em Análise e Desenvolvimento de Sistemas – Braz cubas – 2023</p>
                     <strong>Habilidades Técnicas:</strong>
                     <p>Linguagens: HTML5, CSS3, JavaScript (ES6+)</p>
-                    <p>Frameworks: React, Angular, Vue.js</p>
+                    <p>Frameworks: Bootstrap, React Bootstrap, React, Vue.js</p>
                     <p>Pré-processadores CSS: Sass, Less</p>
                     <p>Ferramentas de versionamento: Git, GitHub</p>
                     <p>Gerenciamento de Pacotes: npm, Yarn</p>
@@ -211,9 +213,10 @@ export function OffCanvasRedesSociais({ name, ...props }) {
             </Offcanvas.Header>
             <Offcanvas.Body>
                 <p>
-                DevOps Fullstack com ampla experiência na criação de interfaces interativas e responsivas. Estou comprometido em utilizar meu conhecimento e conjunto de habilidades para aprimorar a experiência do usuário e a usabilidade de aplicações web. Meu objetivo é integrar perfeitamente o desenvolvimento e operações, otimizando processos e garantindo que os sistemas sejam eficientes, confiáveis e de alto desempenho.
+                    DevOps Fullstack com ampla experiência na criação de interfaces interativas e responsivas. Estou comprometido em utilizar meu conhecimento e conjunto de habilidades para aprimorar a experiência do usuário e a usabilidade de aplicações web. Meu objetivo é integrar perfeitamente o desenvolvimento e operações, otimizando processos e garantindo que os sistemas sejam eficientes, confiáveis e de alto desempenho.
                 </p>
                 <Menu/>
+                <Form />
             </Offcanvas.Body>
         </Offcanvas>
         </>
@@ -227,5 +230,44 @@ export function RedesSociais() {
             <OffCanvasRedesSociais key={idx} placement={placement} name={placement} />
         ))}
         </>
+    );
+}
+
+export function useFormStatus() {
+    const [pending, setPending] = useState(false);
+  
+    // ... lógica para controlar o estado de 'pending'
+  
+    return { pending }; // Certifique-se de retornar 'pending'
+}
+
+export function Submit() {
+    const { pending } = useFormStatus();
+    return (
+      <button type="submit" className="btn btn-dark" disabled={pending}>
+        {pending ? "Enviando..." : "Enviar"}
+      </button>
+    );
+}
+  
+export function Form({ action }) {
+    return (
+        <div className="formulario">
+            <form action={action}>
+                <div className="mb-3">
+                    <label for="nomeInput" className="form-label">Nome</label>
+                    <input name="nome" type="email" className="form-control" id="nomeInput" />
+                </div>
+                <div className="mb-3">
+                    <label for="emailInput" className="form-label">Email</label>
+                    <input name="email" type="email" className="form-control" id="emailInput" />
+                </div>
+                <div className="mb-3">
+                    <label for="mensagemTextarea" className="form-label">Mensagem</label>
+                    <textarea name="mensagem" className="form-control" rows={4} cols={40} id="mensagemTextarea" />
+                </div>
+                <Submit />
+            </form>
+        </div>
     );
 }
