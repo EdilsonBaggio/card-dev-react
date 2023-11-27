@@ -250,21 +250,24 @@ export function Form({ action }) {
         });
     };
 
+    const config = {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
         if (nome.trim() === '' || email.trim() === '' || mensagem.trim() === '') {
             alert('Por favor, preencha todos os campos.');
         } else {
-            axios.post(action, formData)
-                .then(response => {
-                    console.log('Resposta do servidor:', response.data);
-                    // Lógica para lidar com a resposta do servidor, se necessário
-                })
-                .catch(error => {
-                    console.error('Erro ao enviar os dados:', error);
-                    // Lógica para lidar com erros de envio
-                });
+            axios.post('URL_do_seu_endpoint', formData, config).then((response) => {
+                console.log('Resposta do servidor:', response.data);
+            })
+            .catch((error) => {
+                console.error('Ocorreu um erro ao enviar os dados:', error);
+            });
         }
     };
 
