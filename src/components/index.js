@@ -181,8 +181,8 @@ export function ConteudoHome() {
                     <strong>Educação:</strong>
                     <p>Tecnólogo em Análise e Desenvolvimento de Sistemas – Braz cubas – 2023</p>
                     <strong>Habilidades Técnicas:</strong>
-                    <p>Linguagens: HTML5, CSS3, JavaScript (ES6+)</p>
-                    <p>Frameworks: Bootstrap, React Bootstrap, React, Vue.js</p>
+                    <p>Linguagens: HTML5, CSS3, JavaScript (ES6+) e PHP</p>
+                    <p>Frameworks: Bootstrap, React Bootstrap, React, Vue.js e Laravel</p>
                     <p>Pré-processadores CSS: Sass, Less</p>
                     <p>Ferramentas de versionamento: Git, GitHub</p>
                     <p>Gerenciamento de Pacotes: npm, Yarn</p>
