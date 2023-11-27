@@ -262,7 +262,7 @@ export function Form({ action }) {
         if (nome.trim() === '' || email.trim() === '' || mensagem.trim() === '') {
             alert('Por favor, preencha todos os campos.');
         } else {
-            axios.post('URL_do_seu_endpoint', formData, config).then((response) => {
+            axios.post('http://localhost:5000/', formData, config).then((response) => {
                 console.log('Resposta do servidor:', response.data);
             })
             .catch((error) => {
