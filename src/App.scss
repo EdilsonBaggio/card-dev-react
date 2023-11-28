@@ -131,6 +131,14 @@ body{
                     color: #979797;
                 }
             }
+            .languages{
+                text-align: end;
+                padding-right: 105px;
+                padding-top: 20px;
+                button{
+                    border: 0;
+                }
+            }
         }
         .content-left{
             padding-left: 85px;
@@ -189,7 +197,7 @@ body{
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 22px;
-                padding: 0px 10px 0px 0;
+                padding: 0px 30px 0px 0;
                 font-style: italic;
             }
             .follow{

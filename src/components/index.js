@@ -5,8 +5,13 @@ import Spinner from 'react-bootstrap/Spinner';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
+
 import { MdAlternateEmail } from "react-icons/md";
 import axios from 'axios';
+import { useTranslation } from 'react-i18next';
+
+import brasil from "../locales/brasil.png"
+import estadosunidos from "../locales/estados-unidos.png"
 
 
 export function Link({ href, children }) {
@@ -75,6 +80,7 @@ export function Usergit() {
                         width={userData.avatar_size}
                         height={user.avatar_size} roundedCircle />
                     </div>
+                    <LanguageSwitcher />
                 </div>
                 </div>
             ) : (
@@ -203,15 +209,16 @@ export function OffCanvasSobre({ name, ...props }) {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const { t } = useTranslation();
 
     return (
         <>
         <Button variant="primary" onClick={handleShow} className="me-2 btn-contato">
-            Sobre mim
+            {t('sobremim')}
         </Button>
         <Offcanvas show={show} onHide={handleClose} {...props}>
             <Offcanvas.Header closeButton>
-            <Offcanvas.Title>Sobre mim</Offcanvas.Title>
+            <Offcanvas.Title>{t('sobremim')}</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
                 <p>
@@ -234,7 +241,13 @@ export function Sobre() {
         </>
     );
 }
-  
+
+export function Language() {
+    return (
+        <></>
+    );
+}
+
 export function Form({ action }) {
     const [formData, setFormData] = useState({
         nome: '',
@@ -295,3 +308,18 @@ export function Form({ action }) {
         </div>
     );
 }
+
+export function LanguageSwitcher() {
+    const { i18n } = useTranslation();
+  
+    const changeLanguage = (lng) => {
+      i18n.changeLanguage(lng);
+    };
+  
+    return (
+      <div className='languages'>
+        <button onClick={() => changeLanguage('pt')}><img width={30} src={brasil}/></button>
+        <button onClick={() => changeLanguage('en')}><img width={30} src={estadosunidos}/></button>
+      </div>
+    );
+  }

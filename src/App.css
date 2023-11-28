@@ -138,6 +138,14 @@ body .content-home .content-titulo p {
 body .content-home .content-titulo p span {
   color: #979797;
 }
+body .content-home .content-titulo .languages {
+  text-align: end;
+  padding-right: 105px;
+  padding-top: 20px;
+}
+body .content-home .content-titulo .languages button {
+  border: 0;
+}
 body .content-home .content-left {
   padding-left: 85px;
   margin-bottom: 50px;
@@ -200,7 +208,7 @@ body .content-home .content-right p {
   font-size: 14px;
   font-weight: 500;
   line-height: 22px;
-  padding: 0px 10px 0px 0;
+  padding: 0px 30px 0px 0;
   font-style: italic;
 }
 body .content-home .content-right .follow {
@@ -301,10 +309,6 @@ body .offcanvas-body p {
   font-size: 16px;
   font-weight: 300;
   line-height: 23px;
-}
-body .offcanvas-body .formulario {
-  clear: both;
-  margin-top: 100px !important;
 }
 
 /*# sourceMappingURL=App.css.map */
