@@ -281,6 +281,7 @@ body{
     .offcanvas-body{
         .menu{
             margin-top: 15px;
+            height: 50px;
             li{
                 float: left;
                 font-size: 35px;
@@ -296,6 +297,10 @@ body{
             font-size: 16px;
             font-weight: 300;
             line-height: 23px;
+        }
+        .formulario{
+            clear: both;
+            margin-top: 20px;
         }
     }
 }

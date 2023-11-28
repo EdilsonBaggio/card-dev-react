@@ -289,6 +289,7 @@ body .offcanvas-title {
 }
 body .offcanvas-body .menu {
   margin-top: 15px;
+  height: 50px;
 }
 body .offcanvas-body .menu li {
   float: left;
@@ -304,6 +305,10 @@ body .offcanvas-body p {
   font-size: 16px;
   font-weight: 300;
   line-height: 23px;
+}
+body .offcanvas-body .formulario {
+  clear: both;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=App.css.map */

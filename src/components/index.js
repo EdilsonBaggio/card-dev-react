@@ -242,12 +242,6 @@ export function Sobre() {
     );
 }
 
-export function Language() {
-    return (
-        <></>
-    );
-}
-
 export function Form({ action }) {
     const [formData, setFormData] = useState({
         nome: '',
@@ -311,15 +305,15 @@ export function Form({ action }) {
 
 export function LanguageSwitcher() {
     const { i18n } = useTranslation();
-  
+
     const changeLanguage = (lng) => {
-      i18n.changeLanguage(lng);
+        i18n.changeLanguage(lng);
     };
-  
+
     return (
-      <div className='languages'>
+        <div className='languages'>
         <button onClick={() => changeLanguage('pt')}><img width={30} src={brasil}/></button>
         <button onClick={() => changeLanguage('en')}><img width={30} src={estadosunidos}/></button>
-      </div>
+        </div>
     );
-  }
+}
