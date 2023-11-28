@@ -312,8 +312,8 @@ export function LanguageSwitcher() {
 
     return (
         <div className='languages'>
-        <button onClick={() => changeLanguage('pt')}><img width={30} src={brasil}/></button>
-        <button onClick={() => changeLanguage('en')}><img width={30} src={estadosunidos}/></button>
+        <button onClick={() => changeLanguage('pt')}><img width={30} src={brasil} alt="" /></button>
+        <button onClick={() => changeLanguage('en')}><img width={30} src={estadosunidos} alt="" /></button>
         </div>
     );
 }
