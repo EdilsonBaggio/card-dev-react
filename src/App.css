@@ -138,11 +138,6 @@ body .content-home .content-titulo p {
 body .content-home .content-titulo p span {
   color: #979797;
 }
-body .content-home .content-titulo .languages {
-  text-align: end;
-  padding-right: 105px;
-  padding-top: 20px;
-}
 body .content-home .content-titulo .languages button {
   border: 0;
 }
