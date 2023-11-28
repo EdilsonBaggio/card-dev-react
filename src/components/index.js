@@ -12,7 +12,9 @@ import axios from 'axios';
 export function Link({ href, children }) {
     return (
         <li>
-            <a href={href}>{children}</a>
+            <a href={href} target="_blank" rel="noopener noreferrer">
+                {children}
+            </a>
         </li>
     )
 }
@@ -21,8 +23,8 @@ export function Menu() {
     return (
         <div>
             <ul className="menu">
-                <Link href="/"><FaLinkedin /></Link>
-                <Link href="/"><FaGithub /></Link>
+                <Link href="https://www.linkedin.com/in/edilsoncicero"><FaLinkedin /></Link>
+                <Link href="https://github.com/EdilsonBaggio"><FaGithub /></Link>
             </ul>
         </div>
     );
