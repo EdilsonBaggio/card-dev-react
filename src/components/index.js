@@ -128,6 +128,16 @@ export function Followersgit() {
 }
 
 export function ConteudoHome() {
+    const { t } = useTranslation();
+
+    const experiences = t('experiences', { returnObjects: true });
+
+    // Verifique se experiences é um array
+    if (!Array.isArray(experiences)) {
+        console.error("Experiences is not an array:", experiences);
+        return <p>Experiências não disponíveis</p>;
+    }
+
     return (
         <div className="content-home">
             <div className="content-titulo">
@@ -135,51 +145,16 @@ export function ConteudoHome() {
             </div>
             <div className="row">
                 <div className="col-sm-9 curriculo">
-                    <div className="row">
-                        <div className="col-sm-12 content-left">
-                            <h2>Experiência</h2>
-                            <h3>DevOps Fullstack</h3>
-                            <h4>Kasi Desenvolvimento e Soluções em TI</h4>
-                            <span>Fevereiro 2021 - Atual - 3 anos</span>
-                            <p>Desenvolvimento de interfaces front-end responsivas e interativas usando HTML, PHP, CSS e JavaScript.</p>
-                            <p>Colaboração com a equipe de design e back-end para implementar as especificações visuais e funcionais do projeto.</p>
-                            <p>Otimização de desempenho e compatibilidade com diferentes navegadores.</p>
-                            <p>Participação em revisões de código e melhorias contínuas do projeto.</p>
-                            <p>Integração de APIs e serviços web para garantir a comunicação eficiente com o back-end.</p>
-                            <p>Testes de unidade e integração para garantir a qualidade do código entregue.</p>
-                            <p>Resolução de bugs e problemas de compatibilidade.</p>
+                    {experiences.map((experience, index) => (
+                        <div key={index} className="col-sm-12 content-left">
+                            <h3>{experience.title}</h3>
+                            <h4>{experience.company}</h4>
+                            <span>{experience.period}</span>
+                            {experience.responsibilities.map((responsibility, i) => (
+                                <p key={i}>{responsibility}</p>
+                            ))}
                         </div>
-                        <div className="col-sm-12 content-left">
-                            <h2>Experiência</h2>
-                            <h3>Desenvolvedor Fullstack</h3>
-                            <h4>Afonso Carlos Sandríni</h4>
-                            <span>Setembro 2014 - 6 anos</span>
-                            <p>Desenvolvimento de interfaces front-end responsivas e interativas usando HTML, PHP, CSS e JavaScript.</p>
-                            <p>Colaboração com a equipe de design e back-end para implementar as especificações visuais e funcionais do projeto.</p>
-                            <p>Otimização de desempenho e compatibilidade com diferentes navegadores.</p>
-                            <p>Participação em revisões de código e melhorias contínuas do projeto.</p>
-                            <p>Integração de APIs e serviços web para garantir a comunicação eficiente com o back-end.</p>
-                        </div>
-                        <div className="col-sm-12 content-left">
-                            <h2>Experiência</h2>
-                            <h3>Desenvolvedor Front-end</h3>
-                            <h4>Libero +</h4>
-                            <span>Janeiro 2014 - 8 meses</span>
-                            <p>Desenvolvimento de interfaces front-end responsivas e interativas usando HTML, PHP, CSS e JavaScript.</p>
-                            <p>Colaboração com a equipe de design e back-end para implementar as especificações visuais e funcionais do projeto.</p>
-                            <p>Otimização de desempenho e compatibilidade com diferentes navegadores.</p>
-                        </div>
-                        <div className="col-sm-12 content-left">
-                            <h2>Experiência</h2>
-                            <h3>Suporte técnico</h3>
-                            <h4>UOL</h4>
-                            <span>Maio 2013 - 6 meses</span>
-                            <p>Prestação de suporte técnico a clientes via chat, e-mail e telefone, resolvendo dúvidas e problemas relacionados à hospedagem de sites e serviços relacionados.</p>
-                            <p>Identificação e resolução de questões técnicas, como problemas de DNS, e-mails, FTP, SSL e outros aspectos da hospedagem</p>
-                            <p>Configuração e gerenciamento de contas de hospedagem, domínios e bancos de dados.</p>
-                            <p>Acompanhamento proativo de tickets de suporte e garantia de atendimento dentro dos SLAs estabelecidos.</p>
-                        </div>
-                    </div>
+                    ))}
                 </div>
                 <div className="col-sm-3 content-right dados">
                     <p><MdAlternateEmail /> edilsoncicero_@hotmail.com</p>
@@ -187,7 +162,7 @@ export function ConteudoHome() {
                     <Sobre />
                     <Followersgit />
                     <strong>Educação:</strong>
-                    <p>Tecnólogo em Análise e Desenvolvimento de Sistemas – Braz cubas – 2023</p>
+                    <p>Tecnólogo em Análise e Desenvolvimento de Sistemas – Braz Cubas – 2023</p>
                     <strong>Habilidades Técnicas:</strong>
                     <p>Linguagens: HTML5, CSS3, JavaScript (ES6+) e PHP</p>
                     <p>Frameworks: Bootstrap, React Bootstrap, React, Vue.js e Laravel</p>
@@ -203,6 +178,7 @@ export function ConteudoHome() {
         </div>
     );
 }
+
 
 export function OffCanvasSobre({ name, ...props }) {
     const [show, setShow] = useState(false);
@@ -222,7 +198,7 @@ export function OffCanvasSobre({ name, ...props }) {
             </Offcanvas.Header>
             <Offcanvas.Body>
                 <p>
-                    DevOps Fullstack com ampla experiência na criação de interfaces interativas e responsivas. Estou comprometido em utilizar meu conhecimento e conjunto de habilidades para aprimorar a experiência do usuário e a usabilidade de aplicações web. Meu objetivo é integrar perfeitamente o desenvolvimento e operações, otimizando processos e garantindo que os sistemas sejam eficientes, confiáveis e de alto desempenho.
+                {t('textAbout')}
                 </p>
                 <Menu/>
                 <Form />

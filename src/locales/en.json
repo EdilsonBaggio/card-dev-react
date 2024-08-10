@@ -1,6 +1,55 @@
 {
-    "sobremim": "About me!",
-    "welcome": "Welcome to our app!",
-    "greeting": "Greetings, user!"
-  }
-  
+  "aboutMe": "About me!",
+  "textAbout": "Fullstack DevOps with extensive experience in creating interactive and responsive interfaces. I am committed to utilizing my knowledge and skill set to enhance the user experience and usability of web applications. My goal is to seamlessly integrate development and operations, optimizing processes and ensuring systems are efficient, reliable, and performant.",
+  "welcome": "Welcome to our app!",
+  "greeting": "Greetings, user!",
+  "experiences": [
+      {
+          "title": "DevOps Fullstack",
+          "company": "Kasi Development and IT Solutions",
+          "period": "February 2021 - Present - 3 years",
+          "responsibilities": [
+              "Development of responsive and interactive front-end interfaces using HTML, PHP, CSS, and JavaScript.",
+              "Collaboration with the design and back-end teams to implement the project's visual and functional specifications.",
+              "Performance optimization and cross-browser compatibility.",
+              "Participation in code reviews and continuous project improvements.",
+              "Integration of APIs and web services to ensure efficient communication with the back-end.",
+              "Unit and integration testing to ensure the quality of delivered code.",
+              "Bug fixing and compatibility issue resolution."
+          ]
+      },
+      {
+          "title": "Fullstack Developer",
+          "company": "Afonso Carlos Sandríni",
+          "period": "September 2014 - 6 years",
+          "responsibilities": [
+              "Development of responsive and interactive front-end interfaces using HTML, PHP, CSS, and JavaScript.",
+              "Collaboration with the design and back-end teams to implement the project's visual and functional specifications.",
+              "Performance optimization and cross-browser compatibility.",
+              "Participation in code reviews and continuous project improvements.",
+              "Integration of APIs and web services to ensure efficient communication with the back-end."
+          ]
+      },
+      {
+          "title": "Front-end Developer",
+          "company": "Libero +",
+          "period": "January 2014 - 8 months",
+          "responsibilities": [
+              "Development of responsive and interactive front-end interfaces using HTML, PHP, CSS, and JavaScript.",
+              "Collaboration with the design and back-end teams to implement the project's visual and functional specifications.",
+              "Performance optimization and cross-browser compatibility."
+          ]
+      },
+      {
+          "title": "Technical Support",
+          "company": "UOL",
+          "period": "May 2013 - 6 months",
+          "responsibilities": [
+              "Providing technical support to customers via chat, email, and phone, resolving questions and issues related to website hosting and related services.",
+              "Identifying and resolving technical issues such as DNS, email, FTP, SSL, and other hosting aspects.",
+              "Configuring and managing hosting accounts, domains, and databases.",
+              "Proactively monitoring support tickets and ensuring service levels are met."
+          ]
+      }
+  ]
+}
