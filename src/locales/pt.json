@@ -1,5 +1,55 @@
 {
     "sobremim": "Sobre min!",
+    "textAbout": "DevOps Fullstack com ampla experiência na criação de interfaces interativas e responsivas. Estou comprometido em utilizar meu conhecimento e conjunto de habilidades para aprimorar a experiência do usuário e a usabilidade de aplicações web. Meu objetivo é integrar perfeitamente o desenvolvimento e operações, otimizando processos e garantindo que os sistemas sejam eficientes, confiáveis e de alto desempenho.",
     "welcome": "¡Bienvenido a nuestra aplicación!",
-    "greeting": "¡Saludos, usuario!"
-  }
+    "greeting": "¡Saludos, usuario!",
+    "experiences": [
+      {
+          "title": "DevOps Fullstack",
+          "company": "Kasi Desenvolvimento e Soluções em TI",
+          "period": "Fevereiro 2021 - Atual - 3 anos",
+          "responsibilities": [
+              "Desenvolvimento de interfaces front-end responsivas e interativas usando HTML, PHP, CSS e JavaScript.",
+              "Colaboração com a equipe de design e back-end para implementar as especificações visuais e funcionais do projeto.",
+              "Otimização de desempenho e compatibilidade com diferentes navegadores.",
+              "Participação em revisões de código e melhorias contínuas do projeto.",
+              "Integração de APIs e serviços web para garantir a comunicação eficiente com o back-end.",
+              "Testes de unidade e integração para garantir a qualidade do código entregue.",
+              "Resolução de bugs e problemas de compatibilidade."
+          ]
+      },
+      {
+          "title": "Desenvolvedor Fullstack",
+          "company": "Afonso Carlos Sandríni",
+          "period": "Setembro 2014 - 6 anos",
+          "responsibilities": [
+              "Desenvolvimento de interfaces front-end responsivas e interativas usando HTML, PHP, CSS e JavaScript.",
+              "Colaboração com a equipe de design e back-end para implementar as especificações visuais e funcionais do projeto.",
+              "Otimização de desempenho e compatibilidade com diferentes navegadores.",
+              "Participação em revisões de código e melhorias contínuas do projeto.",
+              "Integração de APIs e serviços web para garantir a comunicação eficiente com o back-end."
+          ]
+      },
+      {
+          "title": "Desenvolvedor Front-end",
+          "company": "Libero +",
+          "period": "Janeiro 2014 - 8 meses",
+          "responsibilities": [
+              "Desenvolvimento de interfaces front-end responsivas e interativas usando HTML, PHP, CSS e JavaScript.",
+              "Colaboração com a equipe de design e back-end para implementar as especificações visuais e funcionais do projeto.",
+              "Otimização de desempenho e compatibilidade com diferentes navegadores."
+          ]
+      },
+      {
+          "title": "Suporte técnico",
+          "company": "UOL",
+          "period": "Maio 2013 - 6 meses",
+          "responsibilities": [
+              "Prestação de suporte técnico a clientes via chat, e-mail e telefone, resolvendo dúvidas e problemas relacionados à hospedagem de sites e serviços relacionados.",
+              "Identificação e resolução de questões técnicas, como problemas de DNS, e-mails, FTP, SSL e outros aspectos da hospedagem.",
+              "Configuração e gerenciamento de contas de hospedagem, domínios e bancos de dados.",
+              "Acompanhamento proativo de tickets de suporte e garantia de atendimento dentro dos SLAs estabelecidos."
+          ]
+      }
+  ]
+}

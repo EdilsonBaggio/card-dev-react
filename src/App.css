@@ -140,6 +140,7 @@ body .content-home .content-titulo p span {
 }
 body .content-home .content-titulo .languages button {
   border: 0;
+  background-color: transparent;
 }
 body .content-home .content-left {
   padding-left: 85px;
