@@ -107,6 +107,11 @@ body .content-home .content-titulo .user-avatar {
   border: 5px solid #000;
   margin-left: 15px;
 }
+@media screen and (max-width: 1024px) {
+  body .content-home .content-titulo .user-avatar {
+    margin-left: 0px;
+  }
+}
 body .content-home .content-titulo h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 60px;
@@ -142,13 +147,18 @@ body .content-home .content-titulo .languages button {
   border: 0;
   background-color: transparent;
 }
+@media screen and (max-width: 1024px) {
+  body .content-home .content-titulo .languages {
+    text-align: center;
+  }
+}
 body .content-home .content-left {
   padding-left: 85px;
   margin-bottom: 50px;
 }
 @media screen and (max-width: 500px) {
   body .content-home .content-left {
-    padding: 30px;
+    padding: 20px;
   }
 }
 body .content-home .content-left h2 {
@@ -193,6 +203,7 @@ body .content-home .content-left p {
 @media screen and (max-width: 500px) {
   body .content-home .content-left p {
     padding: 0px;
+    font-size: 16px;
   }
 }
 body .content-home .content-right {
@@ -206,6 +217,11 @@ body .content-home .content-right p {
   line-height: 22px;
   padding: 0px 30px 0px 0;
   font-style: italic;
+}
+@media screen and (max-width: 500px) {
+  body .content-home .content-right p {
+    padding: 0;
+  }
 }
 body .content-home .content-right .follow {
   width: 250px;
@@ -237,6 +253,7 @@ body .content-home .content-right .follow span {
 @media screen and (max-width: 500px) {
   body .content-home .content-right {
     padding: 30px;
+    text-align: center;
   }
 }
 body .content-home .content-right .btn-contato {
