@@ -293,6 +293,7 @@ body .content-home .content-right strong {
   }
   body .content-home .row .curriculo {
     order: 4;
+    padding: 0;
   }
   body .content-home .row .dados {
     order: 3;
@@ -327,6 +328,9 @@ body .offcanvas-body p {
 body .offcanvas-body .formulario {
   clear: both;
   margin-top: 20px;
+}
+body .curriculo {
+  padding: 0;
 }
 
 /*# sourceMappingURL=App.css.map */
