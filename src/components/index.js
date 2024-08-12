@@ -7,9 +7,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 
 import { MdAlternateEmail } from "react-icons/md";
-import axios from 'axios';
 import { useTranslation } from 'react-i18next';
-
 import brasil from "../locales/brasil.png"
 import estadosunidos from "../locales/estados-unidos.png"
 
@@ -221,11 +219,11 @@ export function Sobre() {
 export function Form({ action }) {
     const [formData, setFormData] = useState({
         nome: '',
-        email: '',
+        telefone: '',
         mensagem: ''
     });
 
-    const { nome, email, mensagem } = formData;
+    const { nome, telefone, mensagem } = formData;
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -235,24 +233,15 @@ export function Form({ action }) {
         });
     };
 
-    const config = {
-        headers: {
-          'Content-Type': 'application/json'
-        }
-    };
-
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (nome.trim() === '' || email.trim() === '' || mensagem.trim() === '') {
+        if (nome.trim() === '' || telefone.trim() === '' || mensagem.trim() === '') {
             alert('Por favor, preencha todos os campos.');
         } else {
-            axios.post('http://localhost:5000/', formData, config).then((response) => {
-                console.log('Resposta do servidor:', response.data);
-            })
-            .catch((error) => {
-                console.error('Ocorreu um erro ao enviar os dados:', error);
-            });
+            const whatsappLink = `https://api.whatsapp.com/send?phone=5511991680375&text=${encodeURIComponent(`Nome: ${nome}\nTelefone: ${telefone}\nMensagem: ${mensagem}`)}`;
+
+            window.open(whatsappLink, '_blank');
         }
     };
 
@@ -261,15 +250,37 @@ export function Form({ action }) {
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="nomeInput" className="form-label">Nome</label>
-                    <input name="nome" type="text" className="form-control" id="nomeInput" value={nome} onChange={handleChange} />
+                    <input
+                        name="nome"
+                        type="text"
+                        className="form-control"
+                        id="nomeInput"
+                        value={nome}
+                        onChange={handleChange}
+                    />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="emailInput" className="form-label">Email</label>
-                    <input name="email" type="email" className="form-control" id="emailInput" value={email} onChange={handleChange} />
+                    <label htmlFor="telefoneInput" className="form-label">Telefone</label>
+                    <input
+                        name="telefone"
+                        type="tel"
+                        className="form-control"
+                        id="telefoneInput"
+                        value={telefone}
+                        onChange={handleChange}
+                    />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="mensagemTextarea" className="form-label">Mensagem</label>
-                    <textarea name="mensagem" className="form-control" rows={4} cols={40} id="mensagemTextarea" value={mensagem} onChange={handleChange} />
+                    <textarea
+                        name="mensagem"
+                        className="form-control"
+                        rows={4}
+                        cols={40}
+                        id="mensagemTextarea"
+                        value={mensagem}
+                        onChange={handleChange}
+                    />
                 </div>
                 <button type="submit" className="btn btn-dark">
                     Enviar
