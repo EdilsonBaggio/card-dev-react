@@ -275,6 +275,7 @@ body{
                 }
                 .curriculo{
                     order: 4;
+                    padding: 0;
                 }
                 .dados{
                     order: 3;
@@ -314,5 +315,8 @@ body{
             clear: both;
             margin-top: 20px;
         }
+    }
+    .curriculo{
+        padding: 0;
     }
 }
