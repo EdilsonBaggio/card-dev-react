@@ -1,8 +1,10 @@
 {
     "sobremim": "Sobre min!",
     "textAbout": "DevOps Fullstack com ampla experiência na criação de interfaces interativas e responsivas. Estou comprometido em utilizar meu conhecimento e conjunto de habilidades para aprimorar a experiência do usuário e a usabilidade de aplicações web. Meu objetivo é integrar perfeitamente o desenvolvimento e operações, otimizando processos e garantindo que os sistemas sejam eficientes, confiáveis e de alto desempenho.",
-    "welcome": "¡Bienvenido a nuestra aplicación!",
-    "greeting": "¡Saludos, usuario!",
+    "educacao": "Educação:",
+    "curso": "Tecnólogo em Análise e Desenvolvimento de Sistemas – Braz Cubas – 2023",
+    "habilidade": "Habilidades Técnicas:",
+    "idiomas": "Idiomas:",
     "experiences": [
       {
           "title": "DevOps Fullstack",

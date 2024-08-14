@@ -107,9 +107,10 @@ export function Followersgit() {
         <div>
         {userData ? (
                 <div>
-                    <div className="follow d-grid mt-3">
+                    <div className="follow d-grid mt-3 mb-3">
                         <h4>GitHub</h4>
                         <p className='mb-3'>{userData.location}</p>
+                        <span>Portfólio</span>
                         <p className='mb-3'><a href={userData.blog}>edilsonsantos.website</a></p>
                         <p className='mb-3'>{userData.bio}</p>
                         <span>Seguidores</span>
@@ -159,9 +160,9 @@ export function ConteudoHome() {
                     <p><FaWhatsapp />  11 99168-0375</p>
                     <Sobre />
                     <Followersgit />
-                    <strong>Educação:</strong>
-                    <p>Tecnólogo em Análise e Desenvolvimento de Sistemas – Braz Cubas – 2023</p>
-                    <strong>Habilidades Técnicas:</strong>
+                    <strong>{t('educacao')}</strong>
+                    <p>{t('curso')}</p>
+                    <strong>{t('habilidade')}</strong>
                     <p>Linguagens: HTML5, CSS3, JavaScript (ES6+) e PHP</p>
                     <p>Frameworks: Bootstrap, React Bootstrap, React, Vue.js e Laravel</p>
                     <p>Pré-processadores CSS: Sass, Less</p>
@@ -169,7 +170,7 @@ export function ConteudoHome() {
                     <p>Gerenciamento de Pacotes: npm, Yarn</p>
                     <p>Design Responsivo</p>
                     <p>Conhecimentos básicos em UX/UI</p>
-                    <strong>Idiomas:</strong>
+                    <strong>{t('idiomas')}</strong>
                     <p>Inglês (avançado)</p>
                 </div>
             </div>
@@ -292,15 +293,42 @@ export function Form({ action }) {
 
 export function LanguageSwitcher() {
     const { i18n } = useTranslation();
+    const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
+        setSelectedLanguage(lng);
     };
 
     return (
         <div className='languages'>
-        <button onClick={() => changeLanguage('pt')}><img width={30} src={brasil} alt="" /></button>
-        <button onClick={() => changeLanguage('en')}><img width={30} src={estadosunidos} alt="" /></button>
+            <button
+                onClick={() => changeLanguage('pt')}
+                style={{
+                    border: selectedLanguage === 'pt' ? '4px solid black' : 'none',
+                    color: 'white',
+                    borderRadius: '100%',
+                    padding: '0px',
+                    backgroundColor: selectedLanguage === 'pt' ? 'black' : 'transparent',
+                    height: '38px',
+                    marginRight: '5px'
+                }}
+            >
+                <img width={30} src={brasil} alt="Portuguese" />
+            </button>
+            <button
+                onClick={() => changeLanguage('en')}
+                style={{
+                    border: selectedLanguage === 'en' ? '4px solid black' : 'none',
+                    color: 'white',
+                    borderRadius: '100%',
+                    padding: '0px',
+                    backgroundColor: selectedLanguage === 'en' ? 'black' : 'transparent',
+                    height: '38px'
+                }}
+            >
+                <img width={30} src={estadosunidos} alt="English" />
+            </button>
         </div>
     );
 }
